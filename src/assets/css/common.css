@@ -1,0 +1,223 @@
+.breadcrumb-div{
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.breadcrumb-div ul{
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-div ul li{
+    float: left;
+    list-style: none;
+}
+.breadcrumb-div ul li a{
+    color : gray;
+    font-weight : bold;
+    text-transform: uppercase;
+}
+/* ================================================ */
+/* CARD CLASS */
+
+
+.custom-card{
+   position: relative;
+   -webkit-box-shadow: 0px 2px 9px 2px rgba(184,178,184,0.69);
+   -moz-box-shadow: 0px 2px 9px 2px rgba(184,178,184,0.69);
+   box-shadow: 0px 2px 9px 2px rgba(184,178,184,0.69);
+  border-radius: 10px;
+}
+.custom-card img{
+   width:100%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.custom-card .rating-div{
+   position: absolute;
+   left:10px;
+   top:85px;
+}
+.custom-card .rating-div .rating-point{
+   position: relative;
+   top:11px;
+   font-size: 18px;
+   font-weight: bold;
+   color:white;
+}
+.custom-card .rating-div i{
+   font-size: 12px;
+}
+.custom-card-header{
+   position: relative;
+   height:auto;
+}
+.custom-card-title{
+   position: relative;
+   top:10px;
+   left:0;
+   width:69%;
+   padding-left:10px;
+}
+.custom-card-title-one > h1{
+   font-size:17px;
+   font-weight:bold;
+}
+.custom-card-title-two > h5 {
+   margin-top:-6px;
+   font-size:14px;
+   font-weight:bold;
+}
+.custom-card-price{
+   position: absolute;
+   top:10px;
+   right:0;
+   width:31%;
+   /* padding-right:10px; */
+}
+.custom-card-price > .price-one{
+   font-weight: bold;
+   font-size: 21px;
+}
+.custom-card-price > del > .price-two{
+   font-weight: bold;
+   margin-left: 15px;
+}
+
+
+.blur{
+   color: transparent;
+   text-shadow: 0 0 8px #000;
+}
+.blur-one{
+   color: transparent;
+   text-shadow: 0 0 8px #000;
+   position: absolute;
+   top: 25px;
+   right:10px;
+   font-size: 10px;
+}
+
+.custome-card-footer{
+   position: relative;
+   padding: 10px;
+   bottom:0;
+}
+.custome-card-footer > .readmore{
+   position: relative;
+   top:25px;
+}
+
+.custome-card-footer > .add-to-cart{
+   position: relative;
+   top:-5px;
+   right:0px;
+   float:right;
+   font-weight: bold;
+   background-color:#306fe2;
+   color:#ffffff;
+   border: 1px solid #306fe2;
+   padding-left:10px;
+   padding-right:10px;
+   padding-top:2px;
+   padding-bottom:2px;
+}
+.custome-card-footer > .add-to-cart a{
+   color: #ffffff
+}
+
+.micro-header{
+   background-color: #2d2d55;
+   padding-left:10px;
+   padding-right:10px; 
+   color:#ffffff;
+   border-radius: 5px;
+}
+
+.text-align-center {
+   text-align: center;
+}
+
+.custom-ul{
+   padding: 0;
+   margin: 0;
+}
+.custom-ul li{
+   list-style: none;
+}
+
+/* ======================================= */
+.rwt__tabs[data-rwt-vertical="true"] {
+   display: flex;
+}
+ 
+.rwt__tablist:not([aria-orientation="vertical"]) {
+   border-bottom: 1px solid #ddd;
+}
+ 
+.rwt__tablist[aria-orientation="vertical"] {
+   display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-right: 1px solid #ddd;
+    margin-right: 1rem;
+}
+ 
+.rwt__tab {
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1rem 2rem;
+   transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+ 
+.rwt__tab[aria-selected="false"]:hover,
+.rwt__tab:focus {
+   outline: 0;
+   /* background-color: #f4f4f4; */
+   background-color: rgba(0,0,0,0.05);
+}
+ 
+.rwt__tab[aria-selected="true"] {
+   position: relative;
+}
+
+.rwt__tab[aria-selected="true"]:after {
+   content: '';
+   position: absolute;
+}
+
+.rwt__tablist:not([aria-orientation="vertical"]) .rwt__tab[aria-selected="true"]:after {
+bottom: -1px;
+   left: 0;
+   width: 100%;
+   border-bottom: 3px solid #2e2e54;
+}
+
+.rwt__tablist[aria-orientation="vertical"] .rwt__tab[aria-selected="true"]:after {
+   right: -1px;
+   top: 0;
+   height: 100%;
+   border-right: 3px solid #2e2e54;
+}
+
+@-moz-keyframes rotate {
+   from { -moz-transform: scale( 1 ) rotate( 0deg );   }
+   to   { -moz-transform: scale( 1 ) rotate( 360deg ); }
+}
+@-webkit-keyframes rotate {
+   from { -webkit-transform: scale( 1 ) rotate( 0deg );   }
+   to   { -webkit-transform: scale( 1 ) rotate( 360deg ); }
+}
+@keyframes rotate {
+   from { transform: scale( 1 ) rotate( 0deg );   }
+   to   { transform: scale( 1 ) rotate( 360deg ); }
+}
+.spings {
+   color:#ffffff;
+   -webkit-animation:rotate 1s linear infinite;
+   -moz-animation:rotate 1s linear infinite;
+   animation:rotate 1s linear infinite;
+}

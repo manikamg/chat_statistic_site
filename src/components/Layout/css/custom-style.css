@@ -1,0 +1,95 @@
+#menutwo{
+    background-color: #2d2d55;
+    height:35px;
+    margin-top: 65px;
+}
+
+#search-box{
+    display:none;
+}
+.second-top-menu{
+    width: 100%;
+    height: 35px;
+    background-color: #2d2d55;
+    margin-top:68px;
+}
+
+.menu-two > li > a{
+    font-size: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+    #search-box{
+        display:block;
+        border-radius: 5px;
+        width:450px;
+        margin-top:12px;
+        /* margin-left: px; */
+        padding-left: 10px;
+    }  
+    /* Second top menu ---------------------------------------------- */
+    .second-top-menu{
+        width:100%;
+        height:40px;
+        line-height: 40px;
+        background-color: #2d2d55;
+        margin-top:-7px;
+    }
+    .menu-one{
+        margin-left: -110px;
+        float: left
+    }
+    .menu-two{
+        margin-right: -23px;
+        float: right
+    }
+    #rightMenu{
+        margin-top: 15px;
+    }
+
+    #buyButton{
+        background-color:white;
+        border: 1px solid lightgray;
+        font-size:12px;
+    } 
+    .search-box-session{
+        margin-left: 50px
+    }
+}
+
+
+/* Sidebar style */
+.side-bar{
+    margin: 0;
+    padding: 0;
+}
+.side-bar li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding:10px;
+    /* border:1px solid #242942;
+    border-radius: 5px; */
+    display: block;
+}
+.side-bar li.active-link{
+    background-color: #242942;
+}
+.side-bar a.active-text{
+    color:white;
+    z-index: 999999;
+}
+.side-bar li a{
+    display: block;
+    color:gray;
+}
+.side-bar li:hover{
+    background-color: #242942;
+    color:white;
+}
+.side-bar li:hover a{
+    background-color: #242942;
+    color:white;
+}

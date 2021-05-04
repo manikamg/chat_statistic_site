@@ -1,0 +1,269 @@
+#menutwo{
+    background-color: "#2d2d55";
+    height:"35px";
+    margin-top: 65px;
+}
+#search-box{
+  padding-left:"15px"; 
+  margin-top:"20px";
+  margin-left:"30px";
+  width: "450px";
+  height: "35px";
+  border: "1px solid gray"; 
+  border-radius : "5px"; 
+  font-weight: "bold";
+  font-size: "15px";
+}
+
+.notification-bar{
+  position: relative; 
+  z-index:2; 
+  top:0; 
+  left:-20px; 
+  height:auto; 
+  line-height:40px; 
+  width:114%; 
+  border-bottom: 1px solid lightgray; 
+  padding-left:20px;
+  padding-right:20px;
+  background-color: #2d2d55;
+  color:#ffffff;
+}
+.notification-bar ul li a{
+  color:#ffffff;
+}
+
+.notification-link-btn{
+  height: 25px;
+  line-height: 12px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:-2px;
+  background-color: white;
+  color:#2d2d55;
+  font-size: 12px;
+}
+
+.notification-link-btn:hover {
+  height: 30px;
+  line-height: 11px;
+  margin-top:-5px;
+  background-color: rgb(216, 216, 216);
+  color:#2d2d55;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+.countdown-wrapper {
+  align-items: center;
+	justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width:120%;
+  margin-left:-20px
+}
+
+.countdown-item {
+	color: #fff;
+	font-size: 16px;
+	font-Weight: bold;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  line-height: 30px;
+	margin-top: -15px;
+	margin-right: 20px;
+	/* margin-top: 4px; */
+  padding-top: 23px;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+.countdown-item span {
+  display: none;
+	color: #fff;
+	font-size: 8px;
+	font-weight: 600;
+  text-transform: uppercase;
+  margin-top:-6px;
+  letter-spacing: 2px;
+}
+
+.countdown-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+  height: 40px;
+  display: none;
+}
+.hide-one{
+  display: none;
+}
+.hide-two{
+  display: block;
+  font-size: 12px;
+}
+.noti-ul{
+  padding: 0;
+  margin:0;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noti-ul > .noti-ul-li{
+  list-style: none;
+  float: left;
+}
+
+@media only screen and (min-width: 992px){
+  .notification-bar{
+    position: relative; 
+    z-index:2; 
+    top:0; 
+    left:-70px; 
+    height:52px;; 
+    line-height:52px;; 
+    width:110%; 
+    border-bottom: 1px solid lightgray; 
+    padding-left:20px;
+    padding-right:20px;
+    background-color: #2d2d55;
+    color:#ffffff;
+  }
+  .notification-bar ul li a{
+    color:#ffffff;
+  }
+
+  .notification-link-btn{
+    height: 30px;
+    line-height: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:-6px;
+    background-color: white;
+    color:#2d2d55;
+    font-size: 14px;
+  }
+  
+  .notification-link-btn:hover {
+    height: 30px;
+    line-height: 11px;
+    margin-top:-5px;
+    background-color: rgb(216, 216, 216);
+    color:#2d2d55;
+  }
+
+  /* Condown Timer */
+  
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .countdown-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left:-160px;
+    padding-top:2px
+  }
+
+  .countdown-item {
+    color: #fff;
+    font-size: 16px;
+    font-Weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-right: 20px;
+    /* margin-top: 4px; */
+    padding-top: 23px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+
+  .countdown-item span {
+    color: #fff;
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top:-6px;
+    letter-spacing: 2px;
+    display: block;
+  }
+
+  .countdown-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+  .hide-one{
+    display: block;
+    font-size: 16px;
+  }
+  .hide-two{
+    display: none;
+  }
+  .noti-ul{
+    /* margin-top: -2px; */
+    width:auto;
+  }
+  .noti-ul > .noti-ul-li{
+    list-style: none;
+    float: left;
+  }
+
+#hamburgermenu{
+  position: fixed; 
+  right: 0; 
+  top: 131;
+  width: 300px;
+  height: 100vh; 
+  background-color: #ffffff;
+  z-index: 99999;
+  display:none;
+}
+
+}
+
+
+
+.menu-header{
+  -webkit-box-shadow: 0 3px 12px -4px rgb(138, 137, 137);
+	   -moz-box-shadow: 0 3px 12px -4px rgb(138, 137, 137);
+	        box-shadow: 0 3px 12px -4px rgb(138, 137, 137);
+}
+
+@media (max-width: 475px) {
+  #topnav .buy-button {
+      display: none !important;
+  }
+  #topnav .buy-menu-btn {
+    display: block !important;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+  }
